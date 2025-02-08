@@ -6,13 +6,32 @@
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <meta name="description" content="Chord lagu bima pasole lengkap dengan lirik dan kunci gitar. Belajar chord gitar dengan mudah di Bimachord!">
+  <meta name="keywords" content="chord gitar pasole, kunci gitar pasole, lirik lagu pasole, pasole, lagu bima, rawa mbojo, lagu mbojo, bima chord ,kunci gitar">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="../../icon/apple-icon-57x57.png"> 
+  <link rel="apple-touch-icon" sizes="60x60" href="../../icon/apple-icon-60x60.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="../../icon/apple-icon-72x72.png"> 
+  <link rel="apple-touch-icon" sizes="76x76" href="../../icon/apple-icon-76x76.png"> 
+  <link rel="apple-touch-icon" sizes="114x114" href="../../icon/apple-icon-114x114.png"> 
+  <link rel="apple-touch-icon" sizes="120x120" href="../../icon/apple-icon-120x120.png"> 
+  <link rel="apple-touch-icon" sizes="144x144" href="../../icon/apple-icon-144x144.png"> 
+  <link rel="apple-touch-icon" sizes="152x152" href="../../icon/apple-icon-152x152.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="../../icon/apple-icon-180x180.png"> 
+  <link rel="icon" type="image/png" sizes="192x192" href="../../icon/android-icon-192x192.png"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="../../icon/favicon-32x32.png"> 
+  <link rel="icon" type="image/png" sizes="96x96" href="../../icon/favicon-96x96.png"> 
+  <link rel="icon" type="image/png" sizes="16x16" href="../../icon/favicon-16x16.png"> 
+  <link rel="manifest" href="../../manifest.json"> 
+  <meta name="msapplication-TileColor" content="#ffffff"> 
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png"> 
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../Styles/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <title>Chord Pasole-Lirik Lagu Dan kunci Gitar</title>
+  <title>Lagu Bima Pasole-Lirik Lagu Dan kunci Gitar</title>
   <style>
     body {
       display: flex;
@@ -21,6 +40,79 @@
       background-color: #1a1a1a;
       color: #ffffff; 
     }
+    .chord-container {
+            
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+           
+        }
+        .chord {
+            font-weight: bold;
+            color: #00ff00;
+            display: inline-block;
+            min-width: 40px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        pre {
+            font-family: monospace;
+            font-size: 16px;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        .btn {
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .btn-transpose { background-color: #3498db; color: white; }
+        .btn-scroll { background-color: #2ecc71; color: white; }
+
+        /* Modal Popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .modal img {
+            width: 200px;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
   </style>
 </head>
 <body translate="no">
@@ -68,9 +160,11 @@
   </div>
  <div class="protected-text">
   <div class="content-divider text-center">
-    <p style="color: #00ff00; font-size: 20px">Pasole-Chord Dasar</p>
+    <h2 style="color: #00ff00; font-size: 20px">Lagu Bima-Pasole Chord Dasar</h2>
+   
   </div>
- <div class="ad-container">
+ </div>
+ <div class="adstera">
   <script type="text/javascript">
 	atOptions = {
 		'key' : '79835cf4b45c5113461bc355f79bd332',
@@ -82,155 +176,111 @@
 	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/79835cf4b45c5113461bc355f79bd332/invoke.js"></scr' + 'ipt>');
 </script>
 </div>
+<section class="text-center content-divider"></section>
+<section class="text-center content-divider">
+<button class="btn btn-transpose" onclick="transpose(-1)">- Transpose</button>
+<button class="btn btn-transpose" onclick="transpose(1)">+ Transpose</button>
+<button class="btn btn-scroll" onclick="showElement()">Auto Scroll</button>
+
+</section>
+<section class="text-center">
+  
+ 
+  <div class="chord-container" id="chordContainer">
+      <pre>
+Intro :<span class="chord" onclick="showChordImage('C')">C</span><span class="chord" onclick="showChordImage('G')">G</span><span class="chord" onclick="showChordImage('Em')">Em</span><span class="chord" onclick="showChordImage('F')">F 3x</span>
+
+<span class="chord" onclick="showChordImage('C')">C</span>
+Bune huni ra tawoa
+<span class="chord" onclick="showChordImage('C')">C</span>
+Kone ngaha di cedo wea
+<span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('G')">G</span> 
+Mori dii kaniki
+<span class="chord" onclick="showChordImage('F')">F</span> <span class="chord" onclick="showChordImage('G')">G</span> <span class="chord" onclick="showChordImage('C')">C</span> 
+ne'e raho nika
+<p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">**</p>
+<span class="chord" onclick="showChordImage('C')">C</span>
+Wua garoso wua ta'a
+<span class="chord" onclick="showChordImage('C')">C</span>
+Nggomi mbuipu to'i
+<span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('G')">G</span> 
+Ngahi dou di rasa
+<span class="chord" onclick="showChordImage('F')">F</span> <span class="chord" onclick="showChordImage('G')">C</span> <span class="chord" onclick="showChordImage('C')">C</span> 
+Ngena wa'u pu do'a rasu
+<span class="chord" onclick="showChordImage('F')">F</span> <span class="chord" onclick="showChordImage('G')">G</span> <span class="chord" onclick="showChordImage('C')">C</span> 
+Hm...... hmmmmm .. hmmmm
+
+<p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Reff..</p>
+<span class="chord" onclick="showChordImage('C')">C</span>
+Pasole pasole pasole
+<span class="chord" onclick="showChordImage('A#')">A#</span>      <span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('C')">C</span>
+Ari nggomi ma bou sampela
+<span class="chord" onclick="showChordImage('C')">C</span>
+Pasole pasole pasole
+<span class="chord" onclick="showChordImage('A#')">A#</span>      <span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('C')">C</span>
+Ari nggomi ma bou sampela
+
+**
+<span class="chord" onclick="showChordImage('F')">F</span>   <span class="chord" onclick="showChordImage('C')">C</span>
+Sampela mpalu lae
+  <span class="chord" onclick="showChordImage('G')">G</span>       <span class="chord" onclick="showChordImage('C')">C</span>
+kagaga weki mpa di loa
+<span class="chord" onclick="showChordImage('F')">F</span>   <span class="chord" onclick="showChordImage('C')">C</span>
+Sampela mpalu lae
+  <span class="chord" onclick="showChordImage('G')">G</span>       <span class="chord" onclick="showChordImage('C')">C</span>
+kagaga weki mpa di loa
+
+Intro :<span class="chord" onclick="showChordImage('C')">C</span><span class="chord" onclick="showChordImage('G')">G</span><span class="chord" onclick="showChordImage('Em')">Em</span><span class="chord" onclick="showChordImage('F')">F 2x</span>
+
+
+<span class="chord" onclick="showChordImage('C')">C</span>
+Wua garoso wua ta'a
+<span class="chord" onclick="showChordImage('C')">C</span>
+Nggomi mbuipu to'i
+<span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('G')">G</span> 
+Ngahi dou di rasa
+<span class="chord" onclick="showChordImage('F')">F</span> <span class="chord" onclick="showChordImage('G')">C</span> <span class="chord" onclick="showChordImage('C')">C</span> 
+Ngena wa'u pu do'a rasu
+
+<p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Reff..</p>
+<span class="chord" onclick="showChordImage('C')">C</span>
+Pasole pasole pasole
+<span class="chord" onclick="showChordImage('A#')">A#</span>      <span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('C')">C</span>
+Ari nggomi ma bou sampela
+<span class="chord" onclick="showChordImage('C')">C</span>
+Pasole pasole pasole
+<span class="chord" onclick="showChordImage('A#')">A#</span>      <span class="chord" onclick="showChordImage('F')">F</span>     <span class="chord" onclick="showChordImage('C')">C</span>
+Ari nggomi ma bou sampela
+<span class="chord" onclick="showChordImage('F')">F</span>   <span class="chord" onclick="showChordImage('C')">C</span>
+Sampela mpalu lae
+  <span class="chord" onclick="showChordImage('G')">G</span>       <span class="chord" onclick="showChordImage('C')">C</span>
+kagaga weki mpa di loa
+<span class="chord" onclick="showChordImage('F')">F</span>   <span class="chord" onclick="showChordImage('C')">C</span>
+Sampela mpalu lae
+  <span class="chord" onclick="showChordImage('G')">G</span>       <span class="chord" onclick="showChordImage('C')">C</span>
+kagaga weki mpa di loa
+<span class="chord" onclick="showChordImage('F')">F</span>   <span class="chord" onclick="showChordImage('C')">C</span>
+Sampela mpalu lae
+  <span class="chord" onclick="showChordImage('G')">G</span>       <span class="chord" onclick="showChordImage('C')">C</span>
+kagaga weki mpa di loa
+
+Outro :<span class="chord" onclick="showChordImage('C')">C</span><span class="chord" onclick="showChordImage('G')">G</span><span class="chord" onclick="showChordImage('Em')">Em</span><span class="chord" onclick="showChordImage('F')">F 2x</span>
+
+      </pre>
+  </div>
+
+  <!-- Modal untuk gambar chord -->
+  <div class="modal" id="chordModal">
+      <div class="modal-content">
+          <h3 id="chordTitle"></h3>
+          <img id="chordImage" src="" alt="Chord Gambar">
+          <br>
+          <button class="close-btn" onclick="closeModal()">Tutup</button>
+      </div>
+  </div>
+</section>
    
-  <div class="col-md-6 offset-md-3">
-   <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Intro : ..C..G..Em..F..3x</p>
-  </div>
- 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Bune huni ra tawoa</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Kone ngaha di cedo wea</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G</p>
-         <p style="font-family: courier;">Mori dii kaniki</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">ne'e raho nika</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 offset-md-3">
-   <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">**</p>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Wua garoso wua ta'a</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Nggomi mbuipu to'i</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G</p>
-         <p style="font-family: courier;">Ngahi dou di rasa</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Ngena wa'u pu do'a rasu</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Hm...... hmmmmm .. hmmmm</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6 offset-md-3">
-   <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Reff..</p>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Pasole pasole pasole</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Ari nggomi ma bou sampela</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Pasole pasole pasole</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Ari nggomi ma bou sampela</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 offset-md-3">
-   <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">**</p>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Sampela mpalu lae</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">kagaga weki mpa di loa</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Sampela mpalu lae</p>
-       <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">kagaga weki mpa di loa</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6 offset-md-3">
-   <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">intro :..C..G..Em..F..2x</p>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Wua garoso wua ta'a</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Nggomi mbuipu to'i</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G</p>
-         <p style="font-family: courier;">Ngahi dou di rasa</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-         <p style="font-family: courier;">Ngena wa'u pu do'a rasu</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6 offset-md-3">
-    <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Reff..</p>
-   </div>
- 
-   <div class="container mt-5">
-     <div class="row">
-       <div class="col-md-6 offset-md-3">
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Pasole pasole pasole</p>
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Ari nggomi ma bou sampela</p>
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Pasole pasole pasole</p>
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Ari nggomi ma bou sampela</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6 offset-md-3">
-    <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">**</p>
-   </div>
-   <div class="container mt-5">
-     <div class="row">
-       <div class="col-md-6 offset-md-3">
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Sampela mpalu lae</p>
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">kagaga weki mpa di loa</p>
-         <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Sampela mpalu lae</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">kagaga weki mpa di loa</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">Sampela mpalu lae</p>
-        <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</p>
-          <p style="font-family: courier;">kagaga weki mpa di loa</p>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-6 offset-md-3">
-    <p style="color: #00ff00; font-size: 15px; margin-bottom: 2px;">Outro :..C..G..Em..F..2x</p>
-   </div>
-   </div>
   
-
-   <div class="text-center">
-    <p class="content-divider" style="color: #00ff00; font-size: 20px; margin-bottom: 10px;">Chord Dalam Lagu ini</p>
-  </div>
-  
-    <div class="gallery" id="gallery1">
-      <img src="../kunci c.jpg" data-large="../kunci c.jpg" alt="Gambar 1">
-      <img src="../kunci f.jpg" data-large="../kunci f.jpg" alt="Gambar 2">
-      <img src="../kunci g.jpg" data-large="../kunci g.jpg" alt="Gambar 3">
-      <img src="../kunci ah.jpg" data-large="../kunci ah.jpg" alt="Gambar 4">
-    </div>
 
   <div class="adstera">
     <a href=""><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/468x60_adsterra_reff.gif" /></a>
@@ -258,7 +308,7 @@
         </div>
     </footer>
 
-  <div id="scroll-icon" onclick="scrollPage()">
+  <div id="scroll-icon" class="scroll-iconn" onclick="scrollPage()">
     <span>&darr;</span>
   </div>
 
